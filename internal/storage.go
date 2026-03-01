@@ -68,3 +68,18 @@ func Load() (*Index, error) {
 
 	return &idx, nil
 }
+
+func Save(idx *Index) error {
+	tmp := indexPath() + ".tmp"
+
+	data, err := json.MarshalIndent(idx, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	if err := os.WriteFile(tmp, data, 0644); err != nil {
+		return err
+	}
+
+	return os.Rename(tmp, indexPath())
+}
