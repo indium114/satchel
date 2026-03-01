@@ -5,6 +5,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+	"time"
 
 	"github.com/spf13/cobra"
 	"github.com/stikypiston/satchel/internal"
@@ -41,7 +42,7 @@ var addCmd = &cobra.Command{
 		idx.Items[id] = internal.Item{
 			Name:  filepath.Base(path),
 			Size:  info.Size(),
-			Added: info.ModTime(),
+			Added: time.Now(),
 		}
 
 		idx.NextID++
