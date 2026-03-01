@@ -19,7 +19,7 @@ type Index struct {
 	Items  map[int64]Item `json:"items"`
 }
 
-func baseDir() string {
+func BaseDir() string {
 	runtime := os.Getenv("XDG_RUNTIME_DIR")
 	if runtime == "" {
 		runtime = os.TempDir()
@@ -28,11 +28,11 @@ func baseDir() string {
 }
 
 func ObjectsDir() string {
-	return filepath.Join(baseDir(), "objects")
+	return filepath.Join(BaseDir(), "objects")
 }
 
 func indexPath() string {
-	return filepath.Join(baseDir(), "index.json")
+	return filepath.Join(BaseDir(), "index.json")
 }
 
 func Ensure() error {
