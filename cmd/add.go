@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/stikypiston/satchel/internal"
+	"github.com/indium114/satchel/internal"
 )
 
 // addCmd represents the add command

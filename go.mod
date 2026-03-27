@@ -1,4 +1,4 @@
-module github.com/stikypiston/satchel
+module github.com/indium114/satchel
 
 go 1.25.5
 

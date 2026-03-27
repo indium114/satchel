@@ -10,7 +10,7 @@ Add the repo to your flake inputs...
 
 ```nix
 inputs = {
-  satchel.url = "github:stikypiston/satchel";
+  satchel.url = "github:indium114/satchel";
 };
 ```
 
@@ -27,7 +27,7 @@ environment.systemPackages = [
 To install, simply run:
 
 ```shell
-go install github.com/stikypiston/satchel@latest
+go install github.com/indium114/satchel@latest
 ```
 
 ## Usage

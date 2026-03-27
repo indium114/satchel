@@ -1,6 +1,6 @@
 package main
 
-import "github.com/stikypiston/satchel/cmd"
+import "github.com/indium114/satchel/cmd"
 
 func main() {
 	cmd.Execute()

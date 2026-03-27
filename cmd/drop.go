@@ -6,7 +6,7 @@ import (
 
 	"github.com/charmbracelet/huh"
 	"github.com/spf13/cobra"
-	"github.com/stikypiston/satchel/internal"
+	"github.com/indium114/satchel/internal"
 )
 
 var dropYes bool

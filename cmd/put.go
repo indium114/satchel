@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/spf13/cobra"
-	"github.com/stikypiston/satchel/internal"
+	"github.com/indium114/satchel/internal"
 )
 
 var force bool
