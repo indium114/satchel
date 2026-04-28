@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"github.com/charmbracelet/huh"
-	"github.com/spf13/cobra"
 	"github.com/indium114/satchel/internal"
+	"github.com/spf13/cobra"
 )
 
 var rmYes bool
@@ -22,7 +22,7 @@ var rmCmd = &cobra.Command{
 	RunE: func(cmd *cobra.Command, args []string) error {
 		id, err := strconv.ParseInt(args[0], 10, 64)
 		if err != nil {
-			return errors.New("invalid ID")
+			return errors.New("Invalid ID")
 		}
 
 		idx, err := internal.Load()
@@ -70,6 +70,6 @@ var rmCmd = &cobra.Command{
 }
 
 func init() {
-	rmCmd.Flags().BoolVarP(&rmYes, "yes", "y", false, "Skip confirmation prompt")
+	rmCmd.Flags().BoolVarP(&rmYes, "yes", "y", false, "Skip confirmation")
 	rootCmd.AddCommand(rmCmd)
 }
