@@ -28,7 +28,7 @@
 
           src = self;
 
-          vendorHash = "sha256-lptvZeA7RWF6sobNTsx3zXn9cPLiGOruiMJzDin80pw=";
+          vendorHash = "sha256-aBWVqIVZWaAVbBagREMsz0xpkv502bcXfS5sYKWHV8Y=";
 
           subPackages = [ "." ];
           ldflags = [ "-s" "-w" ];
